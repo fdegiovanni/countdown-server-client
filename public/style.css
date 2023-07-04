@@ -1,0 +1,72 @@
+body {
+    background-color: #b7b7b7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    background-color: #A1A8B0;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    font-size: 8em;
+    margin: 0;
+    padding: 16px;
+}
+
+#shift-countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shift-countdown-container span {
+    font-size: 23vw;
+    font-weight: bold;
+}
+
+#shift-number-container {
+    font-size: 6em;
+    font-weight: bold;
+    color: #024FFF;
+    text-align: center;
+    margin: 0;
+}
+
+#countdown-container {
+    font-size: 25em;
+    font-weight: bold;
+    color: red;
+    width: 100%;
+}
+
+#buttons-container {
+    margin: 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    background-color: #222;
+}

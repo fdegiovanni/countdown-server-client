@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TFAR</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="status" style="color: red; display: inline-block; vertical-align: middle;">TFAR</h1>
+    <img src="logoTFAR.png" alt="TFAR" width="150" height="150" style="vertical-align: middle;">
+  </header>
+
+  <main>
+    <div id="buttons-container">
+      <p style="font-size: 3em; font-weight: bold;">Panel de control</p>
+      
+      <button onclick="startCountdown()">Iniciar</button>
+      <button onclick="stopCountdown()">Detener</button>
+      <button onclick="nextShift()">Siguiente turno</button>
+    </div>
+  </main>
+
+  <audio id="beep1" src="beep1.mp3"></audio>
+  <audio id="beep2" src="beep2.mp3"></audio>
+  <audio id="beep3" src="beep3.mp3"></audio>
+  <script src="./control.js"></script>
+</body>
+
+</html>

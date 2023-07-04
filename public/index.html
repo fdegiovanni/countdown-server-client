@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TFAR</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="status" style="color: red; display: inline-block; vertical-align: middle;">TFAR</h1>
+    <img src="logoTFAR.png" alt="TFAR" width="150" height="150" style="vertical-align: middle;">
+  </header>
+
+  <main>
+    <div id="shift-countdown-container">
+      <span id="shift-indicator">AB</span>
+      &nbsp;
+      <span id="countdown">1:30</span>
+    </div>
+
+    <div id="shift-number-container">
+      Ronda <span id="cycle-indicator">1</span> de 10
+    </div>
+  </main>
+
+  <audio id="beep1"><source src="./beep1.mp3"></audio>
+  <audio id="beep2"><source src="./beep2.mp3"></audio>
+  <audio id="beep3"><source src="./beep3.mp3"></audio>
+
+  <!-- <video id="beep4" width="320" height="240" controls autoplay muted><source src="./beep1.mp4" type="video/mp4"></video> -->
+    
+  <script src="./index.js"></script>
+</body>
+
+</html>
