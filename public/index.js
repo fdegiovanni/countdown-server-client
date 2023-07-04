@@ -87,10 +87,20 @@ function updateCountdown() {
 
     currentShiftIndex++;
     if (currentShiftIndex === SHIFTS.length) currentShiftIndex = 0;
-    if (currentShiftIndex % 2 === 0) cycleCount++; // incrementar el contador de turnos cada 2 ciclos
+    const isOddShift = currentShiftIndex % 2 !== 0;
     
     shiftIndicator.innerHTML = SHIFTS[currentShiftIndex];
-    playSound("beep3");
+
+    if(isOddShift){
+      nextShift(false);
+      setTimeout(() => {
+        startCountdown();
+      }, 10);
+      
+    } else {
+      playSound("beep3");
+      cycleCount++;
+    }
   }
 
   countDown.innerHTML = minutes + ":" + seconds;
@@ -140,9 +150,9 @@ function stopCountdown() {
 }
 
 // función para avanzar al siguiente turno
-function nextShift() {
+function nextShift(addIndex = true) {
   if (paused) {
-    currentShiftIndex++;
+    if(addIndex) currentShiftIndex++;
     if (currentShiftIndex == SHIFTS.length) currentShiftIndex = 0;
     shiftIndicator.innerHTML = SHIFTS[currentShiftIndex];
     cycleIndicator.innerHTML = cycleCount;
